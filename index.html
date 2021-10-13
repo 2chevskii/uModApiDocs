@@ -5,11 +5,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
   <title>uMod API</title>
 </head>
 
 <body>
-
+  <div class="header">
+    <h2>This is an <strong>unofficial</strong> documentary page of <a href="https://umod.org">uMod.org</a> web API</h2>
+    <span class="tshadow">Please keep in mind that it only contains known endpoints and might be incomplete, include deprecated and removed entries</span>
+  </div>
+  <div class="container">
+    <div>
+      <h2 class="topic1">Assets</h2>
+      <div class="endpoint-container">
+        <div>
+          <h3>Manifest</h3>
+          <span>Contains information about all the published packages, game data and other things used by uMod.Agent</span>
+        </div>
+        <span><code>assets.umod.org/umod.manifest.json</code></span>
+      </div>
+    </div>
+    <div>
+      <h2 class="topic1">Community</h2>
+      <div class="endpoint-container">
+        <div>
+          <h3>Contributors</h3>
+          <span>Returns list of all community contributors</span>
+        </div>
+        <span><code>umod.org/community/contributors.json</code></span>
+      </div>
+    </div>
+    <div>
+      <h2 class="topic1">Plugins</h2>
+      <div class="endpoint-container">
+        <div>
+          <h3>Search</h3>
+          <span>Returns list of published plugins</span>
+          <div>
+            <h4>Query parameters</h4>
+            <ul>
+              <li>page</li>
+              <li>tags</li>
+            </ul>
+          </div>
+        </div>
+        <span><code>umod.org/plugins/search.json</code></span>
+      </div>
+      <div class="endpoint-container">
+        <div>
+          <h3>Plugin info</h3>
+          <span>Information about specific plugin</span>
+        </div>
+        <span><code>umod.org/plugins/npc-drop-gun.json</code></span>
+      </div>
+      <div class="endpoint-container">
+        <div>
+          <h3>Plugin versions</h3>
+          <span>Information about published versions of specified plugin</span>
+          <div>
+            <h4>Query parameters</h4>
+            <ul>
+              <li>page</li>
+            </ul>
+          </div>
+        </div>
+        <span><code>umod.org/plugins/npc-drop-gun/versions.json</code></span>
+      </div>
+    </div>
+    <h2 class="topic1">Docs</h2>
+    <div class="endpoint-container">
+      <div>
+        <h3>Hooks</h3>
+        <span>Returns information about <i>documented</i> hooks</span>
+      </div>
+      <span><code>umod.org/documentation/hooks/rust.json</code></span>
+    </div>
+  </div>
 </body>
 
 </html>
