@@ -23,7 +23,7 @@
           <h3>Manifest</h3>
           <span>Contains information about all the published packages, game data and other things used by uMod.Agent</span>
         </div>
-        <span><code>assets.umod.org/umod.manifest.json</code></span>
+        <code>assets.umod.org/umod.manifest.json</code>
       </div>
     </div>
     <div>
@@ -33,7 +33,7 @@
           <h3>Contributors</h3>
           <span>Returns list of all community contributors</span>
         </div>
-        <span><code>umod.org/community/contributors.json</code></span>
+        <code>umod.org/community/contributors.json</code>
       </div>
     </div>
     <div>
@@ -45,32 +45,40 @@
           <div>
             <h4>Query parameters</h4>
             <ul>
-              <li>page</li>
-              <li>tags</li>
+              <li>page <input type="text" id="search-page-in"></li>
+              <li>tags <input type="text" id="search-tags-in"></li>
             </ul>
           </div>
         </div>
-        <span><code>umod.org/plugins/search.json</code></span>
+        <code>umod.org/plugins/search.json</code>
       </div>
       <div class="endpoint-container">
         <div>
           <h3>Plugin info</h3>
           <span>Information about specific plugin</span>
+          <div>
+            <h4>Plugin selection</h4>
+            <input type="text" class="pselect" id="plugin-in">
+          </div>
         </div>
-        <span><code>umod.org/plugins/npc-drop-gun.json</code></span>
+        <code>umod.org/plugins/npc-drop-gun.json</code>
       </div>
       <div class="endpoint-container">
         <div>
           <h3>Plugin versions</h3>
           <span>Information about published versions of specified plugin</span>
           <div>
+            <div>
+              <h4>Plugin selection</h4>
+              <input type="text" class="pselect" id="plugin-in2">
+            </div>
             <h4>Query parameters</h4>
             <ul>
-              <li>page</li>
+              <li>page <input type="text" id="versions-page-in"></li>
             </ul>
           </div>
         </div>
-        <span><code>umod.org/plugins/npc-drop-gun/versions.json</code></span>
+        <code>umod.org/plugins/npc-drop-gun/versions.json</code>
       </div>
     </div>
     <h2 class="topic1">Docs</h2>
@@ -78,8 +86,21 @@
       <div>
         <h3>Hooks</h3>
         <span>Returns information about <i>documented</i> hooks</span>
+        <div>
+          <h4>Game selection</h4>
+          <input type="text" id="game-in">
+          <h4>Available games</h4>
+          <ul class="glist">
+            <li>universal</li>
+            <li>rust</li>
+            <li>hurtworld</li>
+            <li>7-days-to-die</li>
+            <li>reign-of-kings</li>
+            <li>the-forest</li>
+          </ul>
+        </div>
       </div>
-      <span><code>umod.org/documentation/hooks/rust.json</code></span>
+      <code>umod.org/documentation/hooks/rust.json</code>
     </div>
   </div>
 </body>

@@ -38,20 +38,19 @@ a:hover {
   max-width: 70%;
   min-width: 600px;
   overflow: auto;
-  /* border: 1px solid rgb(83, 172, 255); */
-  padding: 0.5em 2em;
+  padding: 1.5em 2em;
   border-radius: 5px;
   box-shadow: 0px 0px 4px 0px rgba(0.2, 0.2, 0.2, 0.4);
 }
 
 .topic1 {
-  text-decoration: underline;
+  border-bottom: 1px dotted grey;
 }
 
 .endpoint-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .endpoint-container > div {
@@ -65,7 +64,8 @@ a:hover {
 
 code {
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.5em;
 }
 
 code::before {
@@ -78,4 +78,26 @@ code::after {
 
 code:hover {
   color: limegreen;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid grey;
+  width: 2em;
+  height: 0.8em;
+  visibility: hidden;
+}
+
+input#game-in,
+input.pselect {
+  width: 7em;
+}
+
+input#search-tags-in {
+  width: 5em;
+  margin-left: 0.25em;
+}
+
+.glist {
+  cursor: pointer;
 }
